@@ -123,11 +123,12 @@ function configGraphic(data) {
 //Iteramos para obtener un array con fechas desde el array serie que contiene fechas y valores
     const dates = series.map(item => item.fecha);
     const title = data.nombre;
-    const colorLine = "red";
+    const colorLine = "green";
     const values = series.map((item) => Number(item.valor));
 
 // Creamos el objeto de configuración usando las variables anteriores
-
+    Chart.defaults.borderColor = "darkgrey";
+    Chart.defaults.color = "white"    
     const config = {
         type: typeGraph,
         data: {
@@ -135,8 +136,9 @@ function configGraphic(data) {
         datasets: [
             {
                 label: title,
-                backgroundColor: colorLine,
-                data: values
+                backgroundColor: "greenyellow",
+                data: values,
+                borderColor: "grey"
             }
         ]}
     };

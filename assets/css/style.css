@@ -135,4 +135,6 @@ body{
     font-style: italic;
     color:rgb(227, 227, 227);
 }
-
+.graph{
+    padding: 30px;
+}
