@@ -1,0 +1,138 @@
+/* Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Google Font*/
+
+
+.wittgenstein-conversor {
+  font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Font-Family and Background-Color*/
+
+body{
+    font-family: 'Wittgenstein';
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+/*Estilo Titulo de la pagina*/
+
+.title-container{
+    display: inline-flex;
+    justify-content: center;
+    padding: 30px;
+    width: 100%;
+}
+.title{
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding: 10px;
+}
+
+/*Containers del Conversor*/
+
+.conversor-big-container{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.conversor-small-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: grey;
+    padding: 20px;
+    border: 2px;
+    border-radius: 3%;
+}
+
+.res-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+
+/*Estilo elementos del Conversor*/
+
+.title-clp{
+    padding-bottom: 10px;
+    width: auto;
+}
+
+.input-clp{
+    padding: 10px;
+    font-size:1.2em;
+    border-radius: 3%;
+    width: auto;
+    text-align: center;
+}
+
+.title-moneda{
+    padding: 10px;
+    padding-top: 30px;
+    width: auto;
+}
+
+.select-moneda{
+    padding: 10px;
+    border-radius: 3%;
+    width: auto;
+    text-align: center;
+    font-size: large;
+}
+.select-moneda {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../img/arrow_down.png');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.select-selected{
+    background-color: dodgerblue;
+}
+  
+.btn-buscar{
+    padding: 12px;
+    margin-top: 30px;
+    background-color: dodgerblue;
+    color: white;
+    width: 100%;
+}
+
+.p-resultado{
+    padding: 20px;
+    font-size: large;
+}
+.p-res-enf{
+    font-weight: bold;
+    color: darkgrey;
+}
+.p-res-enf{
+    font-weight: bold;
+    color: lightblue;
+}
+.p-res-enf2{
+    font-weight: bold;
+    color: greenyellow;
+}
+.p-res-enf3{
+    font-style: italic;
+    color:rgb(227, 227, 227);
+}
+

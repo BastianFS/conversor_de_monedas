@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor CLP</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    
-
-
+    <div class="big-box">
+        <div class="title-container">
+            <h1 class="title">Conversor de monedas Nacional</h1>
+        </div>
+        <div class="conversor-big-container">
+            <div class="conversor-small-container">
+                <h3 class="title-clp">Pesos CLP</h3>
+                <input type="text" class= "input-clp" id="input-clp" value="Ingrese el monto en CLP">
+                <h4 class="title-moneda">Moneda a convertir:</h5>
+                <select class= "select-moneda" id="select-moneda">
+                    <option value="">Seleccione Moneda</option>
+                </select>
+                <button id = "btn-buscar" class="btn-buscar">Buscar</button>
+                <div class = "res-container">
+                    <p id = "p-resultado" class="p-resultado">...</h6>
+                </div>
+            </div>
+        </div>
+        <div class="graph">
+            <canvas id="my-chart"></canvas>
+        </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
